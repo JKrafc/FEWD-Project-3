@@ -1,0 +1,15 @@
+/*--Main CSS--*/
+
+header {
+  display: flex;
+  background-color: royalblue;
+  color: white;
+  justify-content: space-around;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction; column;
+  flex-wrap: wrap;
+}
