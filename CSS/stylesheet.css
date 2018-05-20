@@ -17,6 +17,10 @@ header {
 
 .signup {
   text-align: center;
+}
+
+.signup,
+.huey {
   border-bottom: 3px solid black;
   margin-bottom: 10px;
 }
@@ -34,11 +38,20 @@ form > input {
   margin-bottom: 10px;
 }
 
+fieldset {
+  border: 0;
+}
+
 legend {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: large;
   font-weight: 700;
+}
+
+label {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #name,
