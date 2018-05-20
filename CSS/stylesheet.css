@@ -1,6 +1,6 @@
 /*--Main CSS--*/
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   align-content: center;
 }
 
@@ -27,6 +27,13 @@ form {
   border: none;
 }
 
+form > input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 legend {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -34,10 +41,53 @@ legend {
   font-weight: 700;
 }
 
-input,
-option {
+#name,
+#email,
+#tel,
+#address,
+#city,
+#state,
+#zip,
+#topics {
   background-color: lightgrey;
   width: 100%;
-  margin: 5px;
   align-content: center;
+  padding-top: 10px;
+}
+
+#zip {
+  align-content: center;
+  width: auto;
+}
+
+#state {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.news {
+  margin-bottom: 10px;
+}
+
+#plain_text {
+  margin-bottom: 20px;
+}
+
+#topics {
+  padding-bottom: 50px;
+  margin-top: 10px;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  align-content: center;
+  color: white;
+  background-color: #9EE2C4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
 }

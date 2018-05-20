@@ -4,7 +4,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <title>Kraf Profile</title>
   </head>
   <body>
@@ -20,43 +20,44 @@
     <form action="" method="post">
 
         <legend><span class="contact">Contact Information</span></legend>
-        <label for="name">Full Name</label><br>
+          <label for="name">Full Name</label><br>
         <input type="text" id="name" name="user_name"><br>
-        <label for="email">Email Address</label><br>
+          <label for="email">Email Address</label><br>
         <input type="email" id="email" name="user_email"><br>
-        <label for="tel">Telephone Number</label><br>
+          <label for="tel">Telephone Number</label><br>
         <input type="tel" id="tel" name="user_tel"><br>
-        <label for="address">Address</label><br>
+          <label for="address">Address</label><br>
         <input type="text" id="address" name="user_address"><br>
-        <label for="city">City</label><br>
+          <label for="city">City</label><br>
         <input type="text" id="city" name="user_city"><br>
-        <label for="state">State</label><br>
+          <label for="state">State</label><br>
         <select id="state" name="user_state">
+          <option value="select">Select State</option>
           <option value="Alabama">Alabama</option>
           <option value="Kentucky">Kentucky</option>
           <option value="Louisiana">Louisiana</option>
           <option value="Ohio">Ohio</option>
           <option value="Pennsylvania">Pennsylvania</option>
         </select><br>
-        <label for="zip">Zip Code</label><br>
+          <label for="zip">Zip Code</label><br>
         <input type="text" id="zip" name="user_zipcode"><br>
 
-        <legend><span class="newsletter">Newsletter</span></legend>
-          <label>Select the Newsletters You'd Like to Receive</label><br>
-          <input type="radio"id="html_news" value="html_news">
-            <label for="html_news">HTML News</label><br>
-          <input type="radio"id="css_news" value="css_news">
-            <label for="css_news">CSS News</label><br>
-          <input type="radio"id="javascript_news" value="javascript_news">
-            <label for="javascript_news">Javascript News</label><br>
-          <label>Newsletter Format</label><br>
-          <input type="radio" id="html" value="html">
-            <label for="html">HTML</label><br>
-          <input type="radio" id="plain_text" value="plain_text">
-            <label for="plain_text">Plain Text</label><br>
-          <label for="topics">Other topics you'd like to hear about:</label>
-          <textarea id="topics" value="other_topics"></textarea>
 
+        <legend><span class="newsletter">Newsletter</span></legend>
+        <p class="news">Select the newsletters you'd like to receive</p>
+        <input type="radio"id="html_news" value="html_news">
+          <label for="html_news">HTML News</label><br>
+        <input type="radio"id="css_news" value="css_news">
+          <label for="css_news">CSS News</label><br>
+        <input type="radio"id="javascript_news" value="javascript_news">
+          <label for="javascript_news">Javascript News</label><br>
+        <p class="news">Newsletter Format</p>
+        <input type="radio" id="html" value="html">
+          <label for="html">HTML</label><br>
+        <input type="radio" id="plain_text" value="plain_text">
+          <label for="plain_text">Plain Text</label><br>
+        <label for="topics">Other topics you'd like to hear about:</label>
+        <textarea id="topics" value="other_topics"></textarea>
         <button type="submit">Sign Up</button>
     </form>
     <footer>
