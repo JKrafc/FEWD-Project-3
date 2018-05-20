@@ -1,15 +1,43 @@
 /*--Main CSS--*/
+html {
+  font-family: 'Open Sans', sans-serif;
+  align-content: center;
+}
 
+body {
+  background-color: #F1F0F9;
+}
 header {
   display: flex;
-  background-color: royalblue;
-  color: white;
   justify-content: space-around;
-  margin: auto;
+  background-color: #170D73;
+  color: white;
+  max-width: 100%;
+}
+
+.signup {
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin-bottom: 10px;
 }
 
 form {
-  display: flex;
-  flex-direction; column;
-  flex-wrap: wrap;
+  display: inline-block;
+  margin: auto;
+  border: none;
+}
+
+legend {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+
+input,
+option {
+  background-color: lightgrey;
+  width: 100%;
+  margin: 5px;
+  align-content: center;
 }
