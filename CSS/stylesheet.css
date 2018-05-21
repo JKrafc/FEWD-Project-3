@@ -7,6 +7,14 @@ html {
 body {
   background-color: #F1F0F9;
 }
+
+.main-content {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: auto;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -15,14 +23,18 @@ header {
   max-width: 100%;
 }
 
+h3 {
+  margin-top: 10px;
+  margin-bottom: -.5em;
+}
+
 .signup {
   text-align: center;
 }
 
-.signup,
 .huey {
+  border-top: 7px solid black;
   border-bottom: 3px solid black;
-  margin-bottom: 10px;
 }
 
 form {
@@ -42,17 +54,27 @@ fieldset {
   border: 0;
 }
 
+.contact {
+  position: absolute;
+}
+
+fieldset .huey {
+  position: relative;
+}
+
 legend {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-size: large;
   font-weight: 700;
 }
 
 label {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline-block;
 }
+
 
 #name,
 #email,
@@ -66,16 +88,13 @@ label {
   width: 100%;
   align-content: center;
   padding-top: 10px;
+  border-radius: 5px 5px 5px 5px;
+  padding-bottom: 6px;
 }
 
 #zip {
   align-content: center;
   width: auto;
-}
-
-#state {
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .news {
@@ -103,4 +122,46 @@ button {
 
 footer {
   text-align: center;
+}
+
+/*--Media Queries--*/
+
+@media (min-width: 768px) {
+
+  .main-content,
+  .signup,
+  .huey {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+  }
+
+
+  .huey {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.form-group {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+}
+
+label {
+  display: inline-flex;
+  width: 40%;
+}
+
+#zip {
+  width: 100%;
+}
+
+
 }
