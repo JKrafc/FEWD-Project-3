@@ -29,9 +29,9 @@ h3 {
 }
 
 .signup {
+  align-content: center;
   text-align: center;
 }
-
 
 form {
   display: inline-block;
@@ -51,7 +51,6 @@ fieldset {
   border-top: 7px solid black;
 
 }
-
 
 legend {
   font-size: large;
@@ -83,9 +82,7 @@ label {
 
 #zip {
   align-content: center;
-  width: 40%;
   background-color: lightgrey;
-  align-content: center;
   padding-top: 10px;
   border-radius: 5px 5px 5px 5px;
   padding-bottom: 6px;
@@ -93,6 +90,8 @@ label {
 
 ::-webkit-input-placeholder {
     text-align:right;
+    padding-right: 10px;
+    font-style: italic;
   }
 
 .news {
@@ -121,6 +120,14 @@ button {
 
 footer {
   text-align: center;
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  border: 1px solid #170D73;
 }
 
 /*--Media Queries--*/
@@ -129,6 +136,7 @@ footer {
 
   .main-content,
   .signup,
+  legend,
   .huey {
     display: flex;
     flex-direction: column;
@@ -136,22 +144,51 @@ footer {
     margin: auto;
   }
 
-
+.huey {
+  margin-top: 35px;
+  width: 100%;
+}
 .form-group {
   display: inline-flex;
-  justify-content: space-between;
   align-content: center;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-label {
+#name,
+#email,
+#tel,
+#address,
+#city,
+#state {
   display: inline-flex;
-  width: 40%;
+  width: 70%;
 }
 
 
+label {
+  display: inline-flex;
+  width: 30%;
+}
 
+legend {
+  font-size: large;
+  font-weight: 600;
+  width: auto;
+}
 
+.signup {
+  margin-bottom: 10px;
+  max-width: 62%;
+  margin: auto;
+}
 
+.top {
+  width: 100%;
+}
+
+.textarea {
+  margin: auto;
+  width: auto;
+}
 }

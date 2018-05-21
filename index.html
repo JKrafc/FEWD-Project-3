@@ -13,14 +13,14 @@
     </header>
     <div class="main-content">
       <div class="signup">
-        <h3>Sign up for our newsletter</h2>
+        <h3>Sign up for our newsletter</h3>
         <p>Get the latest news on how your code is doing right in your inbox</p>
       </div><!--signup-->
 
-    <form action="" method="post">
-        <fieldset class="huey">
+    <form method="post">
+        <fieldset>
         <legend><span class="contact">Contact Information</span></legend>
-        <p class="news">   </p>
+          <div class="huey">
           <div class="form-group">
               <label for="name">Full Name</label><br>
             <input type="text" id="name" name="user_name" placeholder="Required"><br>
@@ -56,26 +56,29 @@
             <label for="zip">Zip Code</label><br>
           <input type="text" id="zip" name="user_zipcode"><br>
         </div><!--form-group7-->
+      </div><!--huey-->
       </fieldset>
 
       <fieldset>
         <legend><span class="newsletter">Newsletter</span></legend>
         <p class="news">Select the newsletters you'd like to receive</p>
-        <input type="checkbox"id="html_news" name="radio" value="html_news">
+        <input type="checkbox" id="html_news" name="radio" value="html_news">
           <label for="html_news">HTML News</label><br>
-        <input type="checkbox"id="css_news"  name="radio" value="css_news">
+        <input type="checkbox" id="css_news"  name="radio" value="css_news">
           <label for="css_news">CSS News</label><br>
-        <input type="checkbox"id="javascript_news"  name="radio"value="javascript_news">
+        <input type="checkbox" id="javascript_news"  name="radio" value="javascript_news">
           <label for="javascript_news">Javascript News</label><br>
-          
+
         <p class="news">Newsletter Format</p>
         <input type="radio" id="html"  name="radio" value="html">
           <label for="html">HTML</label><br>
         <input type="radio" id="plain_text" name="radio" value="plain_text">
           <label for="plain_text">Plain Text</label><br>
-        <label for="topics">Other topics you'd like to hear about:</label>
-        <textarea id="topics" value="other_topics"></textarea>
-        <button type="submit">Sign Up</button>
+        <div class="textarea">
+          <label for="topics" class="top">Other topics you'd like to hear about:</label>
+          <textarea id="topics"></textarea>
+          <button type="submit">Sign Up</button>
+        </div><!--textarea-->
       </fieldset>
     </form>
     <footer>
