@@ -32,10 +32,6 @@ h3 {
   text-align: center;
 }
 
-.huey {
-  border-top: 7px solid black;
-  border-bottom: 3px solid black;
-}
 
 form {
   display: inline-block;
@@ -52,21 +48,16 @@ form > input {
 
 fieldset {
   border: 0;
+  border-top: 7px solid black;
+
 }
 
-.contact {
-  position: absolute;
-}
-
-fieldset .huey {
-  position: relative;
-}
 
 legend {
-  margin-top: 50px;
-  margin-bottom: 30px;
   font-size: large;
   font-weight: 700;
+  float: left;
+  width: 100%;
 }
 
 label {
@@ -75,14 +66,12 @@ label {
   display: inline-block;
 }
 
-
 #name,
 #email,
 #tel,
 #address,
 #city,
 #state,
-#zip,
 #topics {
   background-color: lightgrey;
   width: 100%;
@@ -94,11 +83,21 @@ label {
 
 #zip {
   align-content: center;
-  width: auto;
+  width: 40%;
+  background-color: lightgrey;
+  align-content: center;
+  padding-top: 10px;
+  border-radius: 5px 5px 5px 5px;
+  padding-bottom: 6px;
 }
+
+::-webkit-input-placeholder {
+    text-align:right;
+  }
 
 .news {
   margin-bottom: 10px;
+  padding-top: 20px;
 }
 
 #plain_text {
@@ -138,12 +137,6 @@ footer {
   }
 
 
-  .huey {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
 .form-group {
   display: inline-flex;
   justify-content: space-between;
@@ -152,16 +145,13 @@ footer {
   margin-bottom: 5px;
 }
 
-}
-
 label {
   display: inline-flex;
   width: 40%;
 }
 
-#zip {
-  width: 100%;
-}
+
+
 
 
 }
